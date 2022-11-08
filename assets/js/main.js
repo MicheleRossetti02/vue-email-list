@@ -17,9 +17,11 @@ createApp({
             .get('https://flynn.boolean.careers/exercises/api/random/mail')
             .then(response =>{
                 console.log(response.data);    
+                this.mails.push(response.data)
 
+                console.log(this.mails[i]);
             })
-            
+
             
             // this.mails.push(response.data)
 
