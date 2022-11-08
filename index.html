@@ -20,7 +20,10 @@
     <div class="mail_list" 
     v-for="mail in mails" 
     >
-    <h3 class="text-center my-5">{{mail.response}}</h3>
+    <h3 class="text-center my-5"
+    v-if="mails.length==10"
+    >{{mail.response}}</h3>
+
     </div>
 </div>
 
